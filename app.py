@@ -106,9 +106,8 @@ if st.button("🚀 生成動態睡眠處方 (AI 干預)"):
                    結合其 {major} 的背景給予一句具備共感的打氣。
                 """
 
-                # 方案 A：加上 -latest 強制系統去抓取最新發布的版本
                 response = client.models.generate_content(
-                    model='gemini-1.5-flash-latest',
+                    model='gemini-2.5-flash',
                     contents=prompt
                 )
 
