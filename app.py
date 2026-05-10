@@ -106,8 +106,9 @@ if st.button("🚀 生成動態睡眠處方 (AI 干預)"):
                    結合其 {major} 的背景給予一句具備共感的打氣。
                 """
 
+                # 將模型名稱精準改為 'gemini-1.5-flash-8b'
                 response = client.models.generate_content(
-                    model='gemini-1.5-flash',
+                    model='gemini-1.5-flash-8b',
                     contents=prompt
                 )
 
